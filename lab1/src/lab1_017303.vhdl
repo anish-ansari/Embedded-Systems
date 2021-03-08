@@ -1,0 +1,30 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY lab1_017303 IS
+  PORT (
+    A : IN STD_LOGIC;
+    B : IN STD_LOGIC;
+
+    P : OUT STD_LOGIC;
+    Q : OUT STD_LOGIC;
+    R : OUT STD_LOGIC;
+    S : OUT STD_LOGIC;
+    T : OUT STD_LOGIC;
+    U : OUT STD_LOGIC;
+    V : OUT STD_LOGIC);
+END lab1_017303;
+
+ARCHITECTURE Behavioral OF lab1_017303 IS
+
+BEGIN
+
+  P <= A AND B;
+  Q <= A OR B;
+  R <= NOT A;
+  S <= A NAND B;
+  T <= A NOR B;
+  U <= A XOR B;
+  V <= A XNOR B;
+
+END Behavioral;
